@@ -1,0 +1,65 @@
+body {
+    background: url('../assets/home/background-home-desktop.jpg') no-repeat;
+    background-size: 100%;
+}
+
+/* 标题文字 */
+.main .main_text {
+    float: left;
+    width: 450px;
+    height: 382px;
+    margin-left: 165px;
+    margin-top: 200px;
+}
+
+.main .main_text h2 {
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    margin-bottom: 15px;
+    color: var(--home-midground);
+}
+
+.main .main_text h1 {
+    font-size: 150px;
+    margin-bottom: 15px;
+}
+
+.main .main_text p {
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--home-midground);
+}
+
+/* 探索按钮 */
+.main .explore {
+    /* 使用外边框 要将盒子重新设置为content-box*/
+    box-sizing: content-box;
+    float: right;
+    width: 274px;
+    height: 274px;
+    margin-top: 150px;
+    margin-right: 87px;
+    background-color: var(--home-foreground);
+    border-radius: 50%;
+    text-align: center;
+    /* 设置半透明边框 */
+    border: 88px solid var(--home-foreground-oval-before);
+    background-clip: padding-box;
+    /* 设置过渡效果 */
+    transition: all .6s;
+}
+
+.main .explore span {
+    display: block;
+    color: var(--home-background);
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-top: 118px;
+}
+
+.main .explore:hover {
+    border: 88px solid var(--home-foreground-oval-after);
+    background-clip: padding-box;
+    /* 设置鼠标 */
+    cursor: pointer;
+}

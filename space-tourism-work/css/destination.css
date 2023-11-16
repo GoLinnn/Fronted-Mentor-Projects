@@ -1,0 +1,101 @@
+body {
+    background: url('../assets/destination/background-destination-desktop.jpg') no-repeat;
+    background-size: 100%;
+}
+
+h3 {
+    margin-left: 166px;
+    margin-top: 50px;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+}
+
+h3 span {
+    font-weight: bold;
+    color: var(--home-foreground-25);
+    margin-right: 20px;
+}
+
+.star {
+    margin-top: 40px;
+    margin-left: 230px;
+    margin-right: 162px;
+}
+
+.star .sphere {
+    float: left;
+    width: 445px;
+    height: 445px;
+    margin-top: 30px;
+    background: url('../assets/destination/image-moon.png');
+}
+
+.star .describe {
+    float: right;
+    width: 445px;
+    height: 472px;
+}
+
+.star .describe .rightnav {
+    display: flex;
+    width: 325px;
+    height: 34px;
+}
+
+
+.star .describe .rightnav a {
+    display: inline-block;
+    height: 100%;
+    margin-right: 35px;
+    color: var(--home-midground);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+.star .describe .rightnav .active {
+    border-bottom: 3px solid var(--home-foreground);
+}
+
+.star .describe .rightnav a:hover {
+    border-bottom: 3px solid var(--home-foreground-hover);
+}
+
+.detail h2 {
+    margin-top: 50px;
+    font-size: 100px;
+}
+
+.detail p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 5px;
+    color: var(--home-midground);
+}
+
+.detail .detail_line {
+    width: 444px;
+    height: 1px;
+    margin-top: 40px;
+    background-color: var(--detination-line);
+}
+
+.detail .detail_travel {
+    display: flex;
+}
+
+.detail .detail_travel .detail_box {
+    width: 150px;
+    height: 61px;
+    margin-right: 80px;
+}
+
+
+.detail .detail_travel .detail_box .text {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+}
+
+.detail .detail_travel .detail_box .distance,
+.detail .detail_travel .detail_box .travel {
+    font-size: 28px;
+}

@@ -1,0 +1,81 @@
+body {
+    background: url('../assets/crew/background-crew-desktop.jpg') no-repeat;
+    background-size: 100%;
+}
+
+h3 {
+    margin-left: 166px;
+    margin-top: 50px;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+}
+
+h3 span {
+    font-weight: bold;
+    color: var(--home-foreground-25);
+    margin-right: 20px;
+}
+
+/* 描述文字 */
+.people {
+    float: left;
+}
+
+.people .des {
+    width: 488px;
+    height: 300px;
+    margin-left: 165px;
+    margin-top: 120px;
+}
+
+.people .des #role {
+    font-size: 32px;
+    color: var(--home-foreground-hover);
+}
+
+.people .des #name {
+    font-size: 56px;
+    margin-top: 20px;
+}
+
+.people .des p {
+    width: 444px;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 20px;
+    color: var(--home-midground);
+}
+
+/* 导航 */
+.people .bottomnav {
+    margin-left: 165px;
+    margin-top: 80px;
+}
+
+.people .bottomnav a {
+    float: left;
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 24px;
+    background-color: rgba(255, 255, 255, .17);
+    border-radius: 50%;
+    transition: all .6;
+}
+
+.people .bottomnav .active {
+    background-color: var(--home-foreground);
+}
+
+.people .bottomnav a:hover {
+    background-color: var(--home-foreground-hover);
+}
+
+/* 人物图片 */
+.peopleImg {
+    float: right;
+    margin-right: 50px;
+    background: url('../assets/crew/image-douglas-hurley.png') no-repeat;
+    width: 600px;
+    height: 650px;
+}

@@ -1,8 +1,13 @@
 .topbar {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 96px;
     margin-top: 40px;
+
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+        margin-top: 0;
+    }
+
     line-height: 96px;
 }
 
@@ -22,7 +27,13 @@
     position: absolute;
     z-index: 999;
     float: left;
-    width: 473px;
+
+    /* 可以将 @media 样式写在相应元素样式上下文附近，而不是在样式的文件最底部或单独的样式文件中编写，更利于后期的维护。 */
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+        width: 0;
+    }
+
+    width: 30vw;
     height: 1px;
     margin-top: 48px;
     margin-left: 166px;
@@ -33,9 +44,9 @@
     position: absolute;
     right: 0;
     display: flex;
-    width: 830px;
+    width: 58vw;
     height: 100%;
-    padding-left: 75px;
+    padding-left: 5vw;
     background-color: var(--home-foreground-nav);
     backdrop-filter: blur(30px);
 }
@@ -43,9 +54,14 @@
 .topbar .topnav a {
     display: inline-block;
     height: 96px;
-    margin-left: 48px;
+    margin-left: 3vw;
     font-size: 16px;
     letter-spacing: 2.7px;
+
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
 }
 
 .topbar .topnav .active {
@@ -55,6 +71,10 @@
 .topbar .topnav a span {
     font-weight: bold;
     margin-right: 12px;
+
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .topbar .topnav a:hover {

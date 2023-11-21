@@ -67,5 +67,6 @@ rightnav.addEventListener('click', function (e) {
         travel.innerHTML = `${currentItem.travel}`;
         //切换相对应的星球图片
         sphere.style.background = `url(${currentItem.images.png})`;
+        sphere.style.backgroundSize = `cover`;
     }
 })

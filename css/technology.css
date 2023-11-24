@@ -138,6 +138,7 @@ h3 span {
     background: url(../assets/technology/image-launch-vehicle-portrait.jpg) no-repeat;
     background-size: 100%;
 
+
     @media screen and (min-width: 375px) and (max-width: 768px) {
         display: none;
     }

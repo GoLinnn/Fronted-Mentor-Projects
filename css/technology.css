@@ -45,11 +45,12 @@ h3 span {
 }
 
 .launchbox .leftnav {
-    width: 100vw;
+    width: 5vw;
     text-align: center;
 
     @media screen and (min-width: 375px) and (max-width: 768px) {
-        margin: 20px auto;
+        width: 100vw;
+        margin-top: 20px;
     }
 }
 
@@ -60,7 +61,6 @@ h3 span {
 }
 
 .launchbox .leftnav a {
-    float: left;
     display: block;
     width: 80px;
     height: 80px;
@@ -74,6 +74,7 @@ h3 span {
     transition: all .6x;
 
     @media screen and (min-width: 375px) and (max-width: 768px) {
+        float: left;
         width: 60px;
         height: 60px;
         font-size: 24px;
@@ -130,7 +131,8 @@ h3 span {
 }
 
 .launchImg {
-    margin-top: -80px;
+    float: right;
+    margin-top: -350px;
     width: 450px;
     height: 450px;
     background: url(../assets/technology/image-launch-vehicle-portrait.jpg) no-repeat;

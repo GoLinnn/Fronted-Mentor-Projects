@@ -30,6 +30,7 @@ const p = document.querySelector('.launch p');
 // 获取视口宽度
 const viewWidth = document.documentElement.clientWidth;
 let img;
+// 根据视口宽度选择图片
 if (viewWidth > 768) {
     img = document.querySelector('.launchImg');
 } else {
@@ -46,6 +47,7 @@ leftnav.addEventListener('click', function (e) {
         launchName.innerText = `${technology[currentlaunchId].name.toUpperCase()}`;
         p.innerText = `${technology[currentlaunchId].description}`;
 
+        // 根据视口宽度切换图片
         if (viewWidth > 768) {
             img.style.background = `url(${technology[currentlaunchId].images.portrait}) no-repeat`;
         } else {

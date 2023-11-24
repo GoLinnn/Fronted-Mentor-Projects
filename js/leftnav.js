@@ -27,7 +27,14 @@ const technology = [
 const leftnav = document.querySelector('.leftnav');
 const launchName = document.querySelector('#launchName');
 const p = document.querySelector('.launch p');
-const img = document.querySelector('.launchImg');
+// 获取视口宽度
+const viewWidth = document.documentElement.clientWidth;
+let img;
+if (viewWidth > 768) {
+    img = document.querySelector('.launchImg');
+} else {
+    img = document.querySelector('.launchImgMove');
+}
 leftnav.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') {
         const active = leftnav.querySelector('.active');
@@ -38,6 +45,11 @@ leftnav.addEventListener('click', function (e) {
         const currentlaunchId = e.target.dataset.id;
         launchName.innerText = `${technology[currentlaunchId].name.toUpperCase()}`;
         p.innerText = `${technology[currentlaunchId].description}`;
-        img.style.background = `url(${technology[currentlaunchId].images.portrait}) no-repeat`;
+
+        if (viewWidth > 768) {
+            img.style.background = `url(${technology[currentlaunchId].images.portrait}) no-repeat`;
+        } else {
+            img.style.background = `url(${technology[currentlaunchId].images.landscape}) no-repeat`;
+        }
     }
 })

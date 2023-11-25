@@ -1,13 +1,13 @@
 @media screen and (min-width: 768px) {
     body {
-        background: url('../assets/crew/background-crew-desktop.jpg') no-repeat;
+        background: url('../assets/crew/background-crew-tablet.jpg') no-repeat;
         background-size: cover;
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
     body {
-        background: url('../assets/crew/background-crew-tablet.jpg') no-repeat;
+        background: url('../assets/crew/background-crew-desktop.jpg') no-repeat;
         background-size: cover;
     }
 }
@@ -15,12 +15,15 @@
 h3 {
     margin-left: 11vw;
     margin-top: 50px;
-    font-size: 28px;
-    letter-spacing: 4.72px;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 20px;
         letter-spacing: 3.38px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 28px;
+        letter-spacing: 4.72px;
     }
 }
 
@@ -37,12 +40,14 @@ h3 span {
 }
 
 .people {
-    margin-left: 165px;
-    margin-top: 120px;
-
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         text-align: center;
         margin: 50px auto 0 auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 165px;
+        margin-top: 120px;
     }
 }
 
@@ -51,66 +56,84 @@ h3 span {
 }
 
 .people .des #role {
-    font-size: 32px;
     color: var(--home-foreground-hover);
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 32px;
     }
 }
 
 .people .des #name {
-    font-size: 56px;
-    margin-top: 20px;
-
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 40px;
         margin-top: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 56px;
+        margin-top: 20px;
     }
 }
 
 .people .des p {
     width: 444px;
-    font-size: 18px;
     line-height: 32px;
-    margin-top: 20px;
     color: var(--home-midground);
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 16px;
         margin: 10px auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+        margin-top: 20px;
     }
 }
 
 /* 导航 */
 .people .bottomnav {
-    margin-left: 165px;
-    margin-top: 80px;
-}
-
-@media screen and (min-width: 375px) and (max-width: 768px) {
-    .people .bottomnav {
+    @media screen and (min-width: 768px) {
         margin: 30px auto;
     }
 
-    .people .bottomnav li {
-        display: inline-block;
+    @media screen and (min-width: 1440px) {
+        margin-left: 165px;
+        margin-top: 80px;
     }
 }
+
+.people .bottomnav li {
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
+
+    @media screen and (min-width: 1440px) {
+        display: block;
+    }
+}
+
 
 .people .bottomnav a {
     float: left;
     display: block;
-    width: 15px;
-    height: 15px;
     margin-right: 24px;
     background-color: rgba(255, 255, 255, .17);
     border-radius: 50%;
     transition: all .6;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 10px;
         height: 10px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 15px;
+        height: 15px;
     }
 }
 
@@ -124,16 +147,20 @@ h3 span {
 
 /* 人物图片 */
 .peopleImg {
-    margin-left: 20px;
-    margin-right: 50px;
     background: url('../assets/crew/image-douglas-hurley.png') no-repeat;
-    background-size: cover;
-    width: 600px;
-    height: 650px;
+    background-size: 100%;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 550px;
         height: 550px;
         margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 600px;
+        height: 650px;
+        margin-left: 100px;
+        margin-right: 50px;
+        margin-top: 30px;
     }
 }

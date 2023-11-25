@@ -1,13 +1,13 @@
 @media screen and (min-width: 768px) {
     body {
-        background: url('../assets/destination/background-destination-desktop.jpg') no-repeat;
+        background: url('../assets/destination/background-destination-tablet.jpg') no-repeat;
         background-size: cover;
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
     body {
-        background: url('../assets/destination/background-destination-tablet.jpg') no-repeat;
+        background: url('../assets/destination/background-destination-desktop.jpg') no-repeat;
         background-size: cover;
     }
 }
@@ -15,12 +15,15 @@
 h3 {
     margin-left: 11vw;
     margin-top: 50px;
-    font-size: 28px;
-    letter-spacing: 4.72px;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 20px;
         letter-spacing: 3.38px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 28px;
+        letter-spacing: 4.72px;
     }
 }
 
@@ -33,25 +36,31 @@ h3 span {
 .star {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
-    margin-left: 230px;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         margin: 40px auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-top: 40px;
+        margin-left: 230px;
     }
 }
 
 .star .sphere {
-    width: 445px;
-    height: 445px;
-    margin-top: 30px;
     background: url('../assets/destination/image-moon.png');
     background-size: cover;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 300px;
         height: 300px;
         margin: 30px auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 445px;
+        height: 445px;
+        margin: 30px 0 0 0;
     }
 }
 
@@ -60,8 +69,12 @@ h3 span {
     width: 445px;
     height: 472px;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         text-align: center;
+    }
+
+    @media screen and (min-width: 1440px) {
+        text-align: left;
     }
 }
 
@@ -70,8 +83,12 @@ h3 span {
     width: 325px;
     height: 34px;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         margin: auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin: 0;
     }
 }
 
@@ -95,23 +112,28 @@ h3 span {
 
 .detail h2 {
     margin-top: 50px;
-    font-size: 100px;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 80px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 100px;
     }
 }
 
 .detail p {
-    font-size: 18px;
-
-    @media screen and (min-width: 375px) and (max-width: 768px) {
-        font-size: 16px;
-    }
-
     line-height: 32px;
     margin-top: 5px;
     color: var(--home-midground);
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+    }
 }
 
 .detail .detail_line {

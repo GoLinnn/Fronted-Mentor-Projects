@@ -13,9 +13,13 @@
 }
 
 body {
-    /* width: 1440px;
-    height: 900px;
-    margin: 0 auto; */
+
+    /* 当屏幕比最大屏幕(1440*900)还大时 */
+    @media screen and (min-width: 1440px) {
+        width: 1440px;
+        height: 900px;
+        margin: 0 auto;
+    }
 }
 
 * {

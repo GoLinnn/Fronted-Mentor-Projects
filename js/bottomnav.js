@@ -53,5 +53,6 @@ bottomnav.addEventListener('click', function (e) {
         name.innerText = `${crew[currentPeopleId].name.toUpperCase()}`;
         p.innerText = `${crew[currentPeopleId].bio}`;
         img.style.background = `url(${crew[currentPeopleId].images.png}) no-repeat`;
+        img.style.backgroundSize = `cover`;
     }
 })

@@ -1,13 +1,13 @@
 @media screen and (min-width: 768px) {
     body {
-        background: url('../assets/technology/background-technology-desktop.jpg') no-repeat;
+        background: url('../assets/technology/background-technology-tablet.jpg') no-repeat;
         background-size: cover;
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
     body {
-        background: url('../assets/technology/background-technology-tablet.jpg') no-repeat;
+        background: url('../assets/technology/background-technology-desktop.jpg') no-repeat;
         background-size: cover;
     }
 }
@@ -15,12 +15,16 @@
 h3 {
     margin-left: 11vw;
     margin-top: 50px;
-    font-size: 28px;
-    letter-spacing: 4.72px;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+
+    @media screen and (min-width: 768px) {
         font-size: 20px;
         letter-spacing: 3.38px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 28px;
+        letter-spacing: 4.72px;
     }
 }
 
@@ -35,26 +39,32 @@ h3 span {
 .launchbox {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 166px;
-    margin-top: 100px;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         margin: 20px auto;
         text-align: center;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 166px;
+        margin-top: 100px;
     }
 }
 
 .launchbox .leftnav {
-    width: 5vw;
     text-align: center;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 100vw;
         margin-top: 20px;
     }
+
+    @media screen and (min-width: 1440px) {
+        width: 5vw;
+    }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
     .launchbox .leftnav li {
         display: inline-block;
     }
@@ -62,24 +72,27 @@ h3 span {
 
 .launchbox .leftnav a {
     display: block;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 32px;
-    font-size: 32px;
-    line-height: 80px;
     color: var(--home-foreground);
     background-color: var(--home-foreground-oval-before);
     border-radius: 50%;
     border: 1px solid var(--home-foreground-25);
-    transition: all .6x;
+    transition: all .6s;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         float: left;
         width: 60px;
         height: 60px;
         font-size: 24px;
         line-height: 60px;
         margin: 0 5px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+        line-height: 80px;
+        margin-bottom: 32px;
     }
 }
 
@@ -93,10 +106,12 @@ h3 span {
 }
 
 .launchbox .launch {
-    margin-left: 80px;
-
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         margin: 20px auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 80px;
     }
 }
 
@@ -107,26 +122,30 @@ h3 span {
 }
 
 .launchbox .launch #launchName {
-    font-size: 56px;
-    margin-top: 20px;
-
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 40px;
         margin-top: 10px;
+    }
 
+    @media screen and (min-width: 1440px) {
+        font-size: 56px;
+        margin-top: 20px;
     }
 }
 
 .launchbox .launch p {
     width: 444px;
-    font-size: 18px;
-    line-height: 32px;
     margin-top: 20px;
     color: var(--home-midground);
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 28px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+        line-height: 32px;
     }
 }
 
@@ -139,17 +158,27 @@ h3 span {
     background-size: 100%;
 
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: none;
+    }
+
+    @media screen and (min-width: 1440px) {
+        display: block;
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
-    .launchImgMove {
-        width: 100vw;
-        height: 310px;
-        margin-top: 60px;
-        background: url(../assets/technology/image-launch-vehicle-landscape.jpg) no-repeat;
-        background-size: 100%;
+.launchImgMove {
+    width: 100vw;
+    height: 310px;
+    margin-top: 60px;
+    background: url(../assets/technology/image-launch-vehicle-landscape.jpg) no-repeat;
+    background-size: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1440px) {
+        display: none;
     }
 }

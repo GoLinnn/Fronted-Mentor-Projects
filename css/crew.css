@@ -16,6 +16,13 @@ h3 {
     margin-left: 11vw;
     margin-top: 50px;
 
+    @media screen and (min-width: 375px) {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        text-align: center;
+        margin-left: 0;
+    }
+
     @media screen and (min-width: 768px) {
         font-size: 20px;
         letter-spacing: 3.38px;
@@ -39,128 +46,136 @@ h3 span {
     flex-wrap: wrap;
 }
 
-.people {
-    @media screen and (min-width: 768px) {
-        text-align: center;
-        margin: 50px auto 0 auto;
+@media screen and (min-width: 375px) {
+    .peopleImg_mobile {
+        width: 100%;
+        height: 200px;
+        background: url('../assets/crew/image-douglas-hurley.png') no-repeat;
+        background-size: contain;
     }
 
-    @media screen and (min-width: 1440px) {
-        margin-left: 165px;
-        margin-top: 120px;
-    }
-}
+    .people {
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            margin: 50px auto 0 auto;
+        }
 
-.people .des {
-    width: 488px;
-}
-
-.people .des #role {
-    color: var(--home-foreground-hover);
-
-    @media screen and (min-width: 768px) {
-        font-size: 24px;
+        @media screen and (min-width: 1440px) {
+            margin-left: 165px;
+            margin-top: 120px;
+        }
     }
 
-    @media screen and (min-width: 1440px) {
-        font-size: 32px;
-    }
-}
-
-.people .des #name {
-    @media screen and (min-width: 768px) {
-        font-size: 40px;
-        margin-top: 10px;
+    .people .des {
+        width: 488px;
     }
 
-    @media screen and (min-width: 768px) {
-        font-size: 56px;
-        margin-top: 20px;
-    }
-}
+    .people .des #role {
+        color: var(--home-foreground-hover);
 
-.people .des p {
-    width: 444px;
-    line-height: 32px;
-    color: var(--home-midground);
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        margin: 10px auto;
+        @media screen and (min-width: 1440px) {
+            font-size: 32px;
+        }
     }
 
-    @media screen and (min-width: 1440px) {
-        font-size: 18px;
-        margin-top: 20px;
-    }
-}
+    .people .des #name {
+        @media screen and (min-width: 768px) {
+            font-size: 40px;
+            margin-top: 10px;
+        }
 
-/* 导航 */
-.people .bottomnav {
-    @media screen and (min-width: 768px) {
-        margin: 30px auto;
-    }
-
-    @media screen and (min-width: 1440px) {
-        margin-left: 165px;
-        margin-top: 80px;
-    }
-}
-
-.people .bottomnav li {
-    @media screen and (min-width: 768px) {
-        display: inline-block;
+        @media screen and (min-width: 768px) {
+            font-size: 56px;
+            margin-top: 20px;
+        }
     }
 
-    @media screen and (min-width: 1440px) {
+    .people .des p {
+        width: 444px;
+        line-height: 32px;
+        color: var(--home-midground);
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+            margin: 10px auto;
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+
+    /* 导航 */
+    .people .bottomnav {
+        @media screen and (min-width: 768px) {
+            margin: 30px auto;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-left: 165px;
+            margin-top: 80px;
+        }
+    }
+
+    .people .bottomnav li {
+        @media screen and (min-width: 768px) {
+            display: inline-block;
+        }
+
+        @media screen and (min-width: 1440px) {
+            display: block;
+        }
+    }
+
+
+    .people .bottomnav a {
+        float: left;
         display: block;
-    }
-}
+        margin-right: 24px;
+        background-color: rgba(255, 255, 255, .17);
+        border-radius: 50%;
+        transition: all .6;
 
+        @media screen and (min-width: 768px) {
+            width: 10px;
+            height: 10px;
+        }
 
-.people .bottomnav a {
-    float: left;
-    display: block;
-    margin-right: 24px;
-    background-color: rgba(255, 255, 255, .17);
-    border-radius: 50%;
-    transition: all .6;
-
-    @media screen and (min-width: 768px) {
-        width: 10px;
-        height: 10px;
-    }
-
-    @media screen and (min-width: 1440px) {
-        width: 15px;
-        height: 15px;
-    }
-}
-
-.people .bottomnav .active {
-    background-color: var(--home-foreground);
-}
-
-.people .bottomnav a:hover {
-    background-color: var(--home-foreground-hover);
-}
-
-/* 人物图片 */
-.peopleImg {
-    background: url('../assets/crew/image-douglas-hurley.png') no-repeat;
-    background-size: 100%;
-
-    @media screen and (min-width: 768px) {
-        width: 550px;
-        height: 550px;
-        margin: 0 auto;
+        @media screen and (min-width: 1440px) {
+            width: 15px;
+            height: 15px;
+        }
     }
 
-    @media screen and (min-width: 1440px) {
-        width: 600px;
-        height: 650px;
-        margin-left: 100px;
-        margin-right: 50px;
-        margin-top: 30px;
+    .people .bottomnav .active {
+        background-color: var(--home-foreground);
     }
-}
+
+    .people .bottomnav a:hover {
+        background-color: var(--home-foreground-hover);
+    }
+
+    /* 人物图片 */
+    .peopleImg {
+        background: url('../assets/crew/image-douglas-hurley.png') no-repeat;
+        background-size: 100%;
+
+        @media screen and (min-width: 768px) {
+            width: 550px;
+            height: 550px;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 600px;
+            height: 650px;
+            margin-left: 100px;
+            margin-right: 50px;
+            margin-top: 30px;
+        }
+    }

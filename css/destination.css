@@ -1,3 +1,10 @@
+@media screen and (min-width: 375px) {
+    body {
+        background: url('../assets/destination/background-destination-mobile.jpg') no-repeat;
+        background-size: cover;
+    }
+}
+
 @media screen and (min-width: 768px) {
     body {
         background: url('../assets/destination/background-destination-tablet.jpg') no-repeat;
@@ -15,6 +22,13 @@
 h3 {
     margin-left: 11vw;
     margin-top: 50px;
+
+    @media screen and (min-width: 375px) {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        text-align: center;
+        margin-left: 0;
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 20px;
@@ -51,6 +65,12 @@ h3 span {
     background: url('../assets/destination/image-moon.png');
     background-size: cover;
 
+    @media screen and (min-width: 375px) {
+        width: 170px;
+        height: 170px;
+        margin: 30px auto;
+    }
+
     @media screen and (min-width: 768px) {
         width: 300px;
         height: 300px;
@@ -69,6 +89,11 @@ h3 span {
     width: 445px;
     height: 472px;
 
+    @media screen and (min-width: 375px) {
+        text-align: center;
+        margin: auto;
+    }
+
     @media screen and (min-width: 768px) {
         text-align: center;
     }
@@ -82,6 +107,11 @@ h3 span {
     display: flex;
     width: 325px;
     height: 34px;
+
+    @media screen and (min-width: 375px) {
+        width: 100%;
+        justify-content: center;
+    }
 
     @media screen and (min-width: 768px) {
         margin: auto;
@@ -100,6 +130,11 @@ h3 span {
     color: var(--home-midground);
     font-size: 16px;
     letter-spacing: 2.7px;
+
+    @media screen and (min-width: 375px) {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
 }
 
 .star .describe .rightnav .active {
@@ -110,8 +145,19 @@ h3 span {
     border-bottom: 3px solid var(--home-foreground-hover);
 }
 
+.detail {
+    @media screen and (min-width: 375px) {
+        width: 375px;
+    }
+}
+
 .detail h2 {
     margin-top: 50px;
+
+    @media screen and (min-width: 375px) {
+        font-size: 56px;
+        margin-top: 20px;
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 80px;
@@ -127,6 +173,11 @@ h3 span {
     margin-top: 5px;
     color: var(--home-midground);
 
+    @media screen and (min-width: 375px) {
+        font-size: 15px;
+        margin: 0 20px 0 20px;
+    }
+
     @media screen and (min-width: 768px) {
         font-size: 16px;
     }
@@ -141,16 +192,29 @@ h3 span {
     height: 1px;
     margin-top: 40px;
     background-color: var(--detination-line);
+
+    @media screen and (min-width: 375px) {
+        width: 327px;
+        margin: auto;
+        margin-top: 10px;
+    }
 }
 
 .detail .detail_travel {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .detail .detail_travel .detail_box {
     width: 150px;
     height: 61px;
     margin: 0 40px 0 40px;
+
+    @media screen and (min-width: 375px) {
+        width: 327px;
+        margin: 10px auto;
+        text-align: center;
+    }
 }
 
 

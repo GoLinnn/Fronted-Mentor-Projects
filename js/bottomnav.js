@@ -36,11 +36,24 @@ const crew = [
         "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
     }
 ]
-const bottomnav = document.querySelector('.bottomnav');
+
 const role = document.querySelector('#role');
 const name = document.querySelector('#name');
 const p = document.querySelector('.des p');
-const img = document.querySelector('.peopleImg');
+
+// 获取视口宽度
+const viewWidth = document.documentElement.clientWidth;
+let bottomnav;
+let img;
+console.log(viewWidth)
+// 根据视口宽度选择图片和导航栏
+if (viewWidth > 767) {
+    img = document.querySelector('.peopleImg');
+    bottomnav = document.querySelector('.bottomnav_nomobile');
+} else {
+    img = document.querySelector('.peopleImg_mobile');
+    bottomnav = document.querySelector('.bottomnav_mobile');
+}
 bottomnav.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') {
         const active = bottomnav.querySelector('.active');
@@ -52,7 +65,14 @@ bottomnav.addEventListener('click', function (e) {
         role.innerText = `${crew[currentPeopleId].role.toUpperCase()}`;
         name.innerText = `${crew[currentPeopleId].name.toUpperCase()}`;
         p.innerText = `${crew[currentPeopleId].bio}`;
-        img.style.background = `url(${crew[currentPeopleId].images.png}) no-repeat`;
-        img.style.backgroundSize = `cover`;
+        // 根据视口宽度切换图片
+        if (viewWidth > 767) {
+            img.style.background = `url(${crew[currentPeopleId].images.png}) no-repeat`;
+            img.style.backgroundSize = `cover`;
+        } else {
+            img.style.background = `url(${crew[currentPeopleId].images.png}) no-repeat`;
+            img.style.backgroundSize = `contain`;
+            img.style.backgroundPosition = `center`;
+        }
     }
 })

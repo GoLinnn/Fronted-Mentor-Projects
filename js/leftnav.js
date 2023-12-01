@@ -31,7 +31,7 @@ const p = document.querySelector('.launch p');
 const viewWidth = document.documentElement.clientWidth;
 let img;
 // 根据视口宽度选择图片
-if (viewWidth > 768) {
+if (viewWidth > 1039) {
     img = document.querySelector('.launchImg');
 } else {
     img = document.querySelector('.launchImgMove');
@@ -48,10 +48,11 @@ leftnav.addEventListener('click', function (e) {
         p.innerText = `${technology[currentlaunchId].description}`;
 
         // 根据视口宽度切换图片
-        if (viewWidth > 768) {
+        if (viewWidth > 1039) {
             img.style.background = `url(${technology[currentlaunchId].images.portrait}) no-repeat`;
         } else {
             img.style.background = `url(${technology[currentlaunchId].images.landscape}) no-repeat`;
+            img.style.backgroundSize = `cover`;
         }
     }
 })

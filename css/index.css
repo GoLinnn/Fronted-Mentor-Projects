@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
     body {
         background: url('../assets/home/background-home-mobile.jpg') no-repeat;
         background-size: cover;
@@ -31,7 +31,7 @@
     height: 382px;
     margin-left: 165px;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
         height: 300px;
         margin: 80px 40px 20px 40px;
         text-align: center;
@@ -51,7 +51,7 @@
     margin-bottom: 15px;
     color: var(--home-midground);
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
         font-size: 16px;
         letter-spacing: 2.7px
     }
@@ -69,7 +69,7 @@
     font-size: 150px;
     margin-bottom: 15px;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
         font-size: 80px;
     }
 }
@@ -78,7 +78,7 @@
     line-height: 32px;
     color: var(--home-midground);
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
         font-size: 15px;
         line-height: 25px;
     }
@@ -100,7 +100,7 @@
     border-radius: 50%;
     text-align: center;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
         width: 150px;
         height: 150px;
         /* 居中 */
@@ -139,7 +139,7 @@
     letter-spacing: 2px;
     margin-top: 118px;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
         font-size: 20px;
         letter-spacing: 1.25px;
         margin-top: 69px;
